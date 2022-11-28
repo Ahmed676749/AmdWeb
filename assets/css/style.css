@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #00ffff;
+}
+
+
+
 *,
 *::after,
 *::before {
@@ -11,24 +17,28 @@ html {
   font-family: sans-serif;
 }
 
-body {
+.logo-box {
+  width: 10rem;
 }
 
-.wrapper {
-}
-
-header img {
-  width: 15rem;
-  height: 15rem;
+.logo-box img {
+  width: 100%;
+  height: 100%;
 }
 
 header {
   display: flex;
+  height: 10rem;
 }
 
 .color-style {
   width: 100%;
   background-image: linear-gradient(to right, #00ffff, #006da0);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -43,12 +53,13 @@ nav ul li a {
   color: #000000;
   letter-spacing: 0.5rem;
   padding: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 nav ul li {
   list-style: none;
+  padding: 0 2rem;
 }
 
 nav ul li a:hover,
@@ -57,7 +68,6 @@ nav ul li a:hover {
   background-color: #000000;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   color: #d9d9d9;
-  padding: 1rem;
 }
 
 .search-box {
@@ -73,7 +83,7 @@ nav ul li a:hover {
   background-color: white;
   width: 40rem;
   padding: 1rem 5rem 1rem 5rem;
-  border: 2px solid #00ffff;
+  border: 2px solid var(--color-primary);
   font-size: 1.6rem;
   font-weight: bold;
   font-style: italic;
@@ -85,7 +95,7 @@ nav ul li a:hover {
 .style-button {
   font-weight: bold;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 2.5rem;
   padding: 1rem 5rem 1rem 5rem;
   background-color: black;
@@ -100,7 +110,7 @@ nav ul li a:hover {
   font-weight: 500;
   letter-spacing: 0.2rem;
   padding: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: inline-block;
 }
 
@@ -192,7 +202,7 @@ h1 {
   font-weight: 500;
   letter-spacing: 0.2rem;
   padding: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -207,7 +217,7 @@ h2 {
   font-weight: bold;
 }
 
-h2 a {
+h2 {
   text-decoration: none;
   color: #006da0;
 }
@@ -251,11 +261,18 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
+  color: #000000;
 }
+
+
 
 .partOne-job-box,
 .partTwo-job-box {
   width: 40%;
+}
+
+.wrapper-layer a {
+  text-decoration: none;
 }
 
 /* INSCRIPTION */
@@ -280,7 +297,7 @@ form {
 
 label {
   color: #d9d9d9;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
