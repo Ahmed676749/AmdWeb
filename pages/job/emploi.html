@@ -10,9 +10,11 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="logo-box">
-          <img src="../../assets/images/img_first_page/logo.png" alt="logo" />
-        </div>
+        <a href="../../index.html">
+          <div class="logo-box">
+            <img src="../../assets/images/img_first_page/logo.png" alt="logo" />
+          </div>
+        </a>
         <nav class="color-style">
           <ul>
             <li>
@@ -22,10 +24,13 @@
               <a href="emploi.html">EMPLOI</a>
             </li>
             <li>
-              <a href="../inscription/inscription.html">INSCRIPTION</a>
+              <a href="../enregistrement/inscription.html">INSCRIPTION</a>
             </li>
             <li>
-              <a href="../recruteur/recruteur.html">RECRUTEUR</a>
+              <a href="../depots/recruteur.html">RECRUTEUR</a>
+            </li>
+            <li>
+              <a href="../photos/galerie.html">GALERIE</a>
             </li>
           </ul>
         </nav>
@@ -35,76 +40,81 @@
           <label for="search-bar"></label>
           <input id="search-bar" type="text" value="Recherche par mots-clés" />
         </form>
-        <a href="#" class="style-button">Trouver</a>
+        <a href="emploi.html" class="style-button">Trouver</a>
       </div>
       <section class="job-section-list">
+        <!-- <div class="wrap-job"> -->
         <h1>Les offres d'emplois</h1>
         <div class="wrapper-layer">
-          <div class="partOne-job-box">
+          <div class="part1-job-box">
             <a href="details-emploi.html">
               <div class="job-box">
-                  <h2>Développeur Web (H/F)</h2>
-                  <address>strasbourg</address>
-                  <p>Salaire: 1800 &euro; / mois</p>
-              </div>
-            </a>
-            <a href="#">
-              <div class="job-box">
-                  <h2>Développeur Fullstack (H/F)</h2>
-                  <address>paris</address>
-                  <p>Salaire: 3000 &euro; / mois</p>
-              </div>
-            </a>
-            <a href="#">
-              <div class="job-box">
-                <h2>Développeur PHP (H/F)</h2>
-                <address>marseille</address>
-                <p>Salaire: 2500 &euro; / mois</p>
-              </div>
-            </a>
-            <a href="#">
-            <div class="job-box">
-              <h2>Développeur JavaScript (H/F)</h2>
-              <address>lyon</address>
-              <p>Salaire: 2300 &euro; / mois</p>
-            </div>
-            </a>
-          </div>
-          <div class="partTwo-job-box">
-            <a href="#">
-              <div class="job-box">
-                <h2>Développeur Back End (H/F)</h2>
+                <h2>Développeur Web</h2>
                 <address>strasbourg</address>
                 <p>Salaire: 1800 &euro; / mois</p>
               </div>
             </a>
-            <a href="#">
+            <a href="details-emploi.html">
               <div class="job-box">
-                <h2>Développeur Front End (H/F)</h2>
+                <h2>Développeur Fullstack</h2>
+                <address>paris</address>
+                <p>Salaire: 3000 &euro; / mois</p>
+              </div>
+            </a>
+
+            <a href="details-emploi.html">
+              <div class="job-box">
+                <h2>Développeur PHP</h2>
+                <address>marseille</address>
+                <p>Salaire: 2500 &euro; / mois</p>
+              </div>
+            </a>
+            <a href="details-emploi.html">
+              <div class="job-box">
+                <h2>Développeur JavaScript</h2>
+                <address>lyon</address>
+                <p>Salaire: 2300 &euro; / mois</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="part2-job-box">
+            <a href="details-emploi.html">
+              <div class="job-box">
+                <h2>Développeur Back End</h2>
+                <address>strasbourg</address>
+                <p>Salaire: 1800 &euro; / mois</p>
+              </div>
+            </a>
+            <a href="details-emploi.html">
+              <div class="job-box">
+                <h2>Développeur Front End</h2>
                 <address>bordeaux</address>
                 <p>Salaire: 2000 &euro; / mois</p>
               </div>
             </a>
-            <a href="#">
+
+            <a href="details-emploi.html">
               <div class="job-box">
-                <h2>Développeur PHP/Symfony (H/F)</h2>
+                <h2>Développeur PHP/Symfony</h2>
                 <address>paris</address>
                 <p>Salaire: 3600 &euro; / mois</p>
               </div>
             </a>
-            <a href="#">
+            <a href="details-emploi.html">
               <div class="job-box">
-                <h2>Développeur React (H/F)</h2>
+                <h2>Développeur React</h2>
                 <address>lyon</address>
                 <p>Salaire: 2600 &euro; / mois</p>
               </div>
             </a>
           </div>
         </div>
+        <!-- </div> -->
       </section>
-      <footer class="color-style">
+      <footer>
         <a href="#">Localisation</a>
-        <a href="#">Plan du site</a>
+        <a href="../footer/plan-site.html">Plan du site</a>
         <a href="#">Mentions légales</a>
       </footer>
     </div>
