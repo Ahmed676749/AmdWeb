@@ -18,78 +18,112 @@
         <nav class="color-style">
           <ul>
             <li>
-              <a href="../../index.html">ACCUEIL</a>
+              <a href="../../index.html">Accueil</a>
             </li>
             <li>
-              <a href="../job/emploi.html">EMPLOI</a>
+              <a href="../job/emploi.html">Emploi</a>
             </li>
             <li>
-              <a href="inscription.html">INSCRIPTION</a>
+              <a href="inscription.html">Inscription</a>
             </li>
             <li>
-              <a href="../depots/recruteur.html">RECRUTEUR</a>
+              <a href="../depots/connexion.html">Connexion</a>
             </li>
             <li>
-              <a href="../photos/galerie.html">GALERIE</a>
+              <a href="../photos/galerie.html">Galerie</a>
             </li>
           </ul>
         </nav>
       </header>
-      <div class="search-box">
-        <form>
-          <label for="search-bar"></label>
-          <input id="search-bar" type="text" value="Recherche par mots-clés" />
-        </form>
-        <a href="../job/emploi.html" class="style-button">Trouver</a>
-      </div>
       <main>
         <section>
           <div class="wrapper-subscribe">
-            <h1>Inscrivez vous</h1>
+            <h1 class="style-h">Inscrivez vous</h1>
+            <p class="text-presentation">
+              Afin de déposer une offre d'emploi ou de postuler, vous devez vous
+              s'inscire.
+              <br />
+              Oui, l'inscription est obligatoire comme sur tous les sites.
+            </p>
             <div class="form-box">
               <form>
-                <div class="left-side">
-                  <div class="style">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" />
+                <div class="radio-btn">
+                  <p>Vous êtes :</p>
+                  <div>
+                    <input
+                      type="radio"
+                      id="recruiter"
+                      name="role"
+                      value="recruiter"
+                      checked
+                    />
+                    <label for="recruiter">Recruteur</label>
                   </div>
-                  <div class="style">
-                    <label for="firstName">Prénom</label>
-                    <input type="text" id="firstName" />
-                  </div>
-                  <div class="style">
-                    <label for="adress">Adresse</label>
-                    <input type="text" id="adress" />
-                  </div>
-                </div>
-                <div class="right-side">
-                  <div class="style">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" />
-                  </div>
-                  <div class="style">
-                    <label for="passWord">Mot de passe</label>
-                    <input type="password" id="passWord" />
-                  </div>
-                  <div class="style">
-                    <label for="confirmPassWord"
-                      >Confirmation mot de passe</label
-                    >
-                    <input type="password" id="confirmPassWord" />
+                  <div>
+                    <input
+                      type="radio"
+                      id="candidate"
+                      name="role"
+                      value="candidate"
+                    />
+                    <label for="dewey">Candidat</label>
                   </div>
                 </div>
+                <div class="style">
+                  <label for="name">Nom</label>
+                  <input type="text" id="name" />
+                </div>
+                <div class="style">
+                  <label for="firstName">Prénom</label>
+                  <input type="text" id="firstName" />
+                </div>
+                <div class="style">
+                  <label for="adress">Adresse</label>
+                  <input type="text" id="adress" />
+                </div>
+
+                <div class="style">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" />
+                </div>
+                <div class="style">
+                  <label for="passWord">Mot de passe</label>
+                  <input type="password" id="passWord" />
+                </div>
+                <button class="btn-subscribe style-button" type="submit">
+                  S'incrire
+                </button>
               </form>
-              <a href="#">
-                <div class="btn subscribe style-button">S'incrire</div>
-              </a>
             </div>
           </div>
         </section>
       </main>
       <footer>
-        <a href="#">Localisation</a>
-        <a href="../footer/plan-site.html">Plan du site</a>
-        <a href="#">Mentions légales</a>
+        <div class="wrap-footer">
+          <div class="adress-footer">
+            <p>AmdWeb</p>
+            <p>4 Rue du Rhin, 68000 Colmar</p>
+            <p>Téléphone : 06 12 34 56 78</p>
+            <p>AmdWeb@ccicampus.fr</p>
+          </div>
+          <div class="nav-footer">
+            <a href="pages/footer/plan-site.html">Plan du site</a>
+            <a href="#">Mentions légales</a>
+          </div>
+        </div>
+        <div class="wrap-map">
+          <div class="map-footer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d339624.2376506505!2d7.275304560499902!3d48.316036845340946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479165fb30b15b99%3A0x9bfe7b716880d65b!2sCCI%20Campus%20Alsace!5e0!3m2!1sfr!2sfr!4v1670170347600!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
