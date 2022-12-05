@@ -57,7 +57,41 @@ header {
 /* nav {
   width: 100%;
 } */
+.navbar {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
 
+.nav-link {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.collapse {
+  justify-content: center;
+  width: 100%;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  padding-top: 0;
+  height: 100%;
+}
+
+.nav-link:hover {
+  color: #d9d9d9;
+}
+
+.nav-link.active:hover {
+  color: #d9d9d9;
+}
 nav ul {
   height: 100%;
   display: flex;
@@ -119,7 +153,7 @@ nav ul li a:hover {
   text-decoration: none;
 
   border-radius: 2.5rem;
-  padding: 1rem 5rem 1rem 5rem;
+  /* padding: 1rem 5rem 1rem 5rem; */
   background-color: black;
   color: #d9d9d9;
   border: 2px solid #00ffff;
@@ -134,13 +168,14 @@ nav ul li a:hover {
   width: 100%;
   background-color: #d9d9d9;
   border: 2px solid #00ffff;
+  border-radius: 0.5rem;
 }
 
 .style-h {
   color: #006da0;
-  font-weight: 500;
+  font-weight: bold;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -357,8 +392,8 @@ address {
 .inscription-section {
   background-image: linear-gradient(
       to right,
-      rgb(0, 255, 255, 0.8),
-      rgb(0, 109, 160, 0.8)
+      rgb(0, 255, 255, 0.5),
+      rgb(0, 109, 160, 0.5)
     ),
     url(../images/img_first_page/demandeur-emploi.jpg);
   background-repeat: no-repeat;
@@ -380,8 +415,8 @@ address {
 .announcement-section {
   background-image: linear-gradient(
       to right,
-      rgb(0, 255, 255, 0.8),
-      rgb(0, 109, 160, 0.8)
+      rgb(0, 255, 255, 0.5),
+      rgb(0, 109, 160, 0.5)
     ),
     url(../images/img_first_page/recruteur.jpg);
   background-repeat: no-repeat;
@@ -493,23 +528,27 @@ textarea {
 
 /* GALLERY */
 
-.wrapper-gallery {
-  display: flex;
-  justify-content: space-around;
+.font-body {
+  font-family: sans-serif;
 }
 
-.img-box-gallery {
+/* .wrapper-gallery {
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* .img-box-gallery {
   width: 40rem;
   height: 40rem;
   padding: 2rem 0;
-}
+} */
 
-.wrapper-gallery img {
+/* .wrapper-gallery img {
   width: 100%;
   height: 100%;
   border: 2px solid #00ffff;
   border-radius: 0.5rem;
-}
+} */
 
 .gallery-box {
   max-width: 80rem;
@@ -522,6 +561,7 @@ textarea {
 
 .gallery-box p {
   font-size: 1.6rem;
+  padding: 2rem;
 }
 
 .gallery-box h1 {
@@ -550,13 +590,16 @@ textarea {
   color: #d9d9d9;
 }
 
-/* ul {
-  list-style: none;
-} */
+/* MENTIONS LEGALES*/
 
-/* li {
-  padding: 1.5rem;
-} */
+.wrap-mentions-box {
+  padding: 3rem;
+}
+
+.wrap-mentions-box h1 {
+  display: block;
+  text-align: center;
+}
 
 @media only screen and (max-width: 75em) {
 }
@@ -663,14 +706,6 @@ textarea {
     padding: 0.2rem 0;
   }
 
-  header {
-    height: 13rem;
-  }
-
-  .logo-box {
-    width: 13rem;
-  }
-
   .style input,
   textarea {
     /* width: 14rem; */
@@ -695,6 +730,10 @@ textarea {
 }
 
 @media only screen and (max-width: 23.438em) {
+  nav ul li a {
+    padding: 0.2rem;
+  }
+
   #search-bar {
     padding: 1rem 0.5rem 1rem 0.5rem;
   }
@@ -754,6 +793,18 @@ textarea {
   .text-presentation {
     padding: 0;
   }
+
+  .description {
+    padding: 0;
+  }
+
+  .card-job {
+    margin: 2rem 0;
+  }
+
+  /* .job-section-list {
+    padding: 0;
+  } */
 }
 
 /**/
