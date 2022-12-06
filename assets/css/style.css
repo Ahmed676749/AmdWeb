@@ -1,5 +1,6 @@
 :root {
   --color-primary: #00ffff;
+  --bs-body-line-height: 0;
 }
 
 html {
@@ -19,6 +20,7 @@ html {
 body {
   height: 100vh;
   font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 
 .logo-box {
@@ -66,11 +68,13 @@ header {
 .nav-link {
   font-weight: bold;
   font-size: 1.6rem;
+  display: initial;
 }
 
 .collapse {
   justify-content: center;
   width: 100%;
+  height: 100%;
 }
 
 .container-fluid {
@@ -122,12 +126,20 @@ nav ul li a:hover {
   color: #d9d9d9;
 }
 
+.inscription-section button,
+.announcement-section button,
+.btn-subscribe,
+.right-box button {
+  line-height: none;
+  height: 4.2rem;
+}
+
 .search-box {
   background-color: #d9d9d9;
   display: flex;
   justify-content: center;
   padding: 3rem;
-  max-width: 100%;
+  width: 100%;
 }
 
 #search-bar {
@@ -153,7 +165,7 @@ nav ul li a:hover {
   text-decoration: none;
 
   border-radius: 2.5rem;
-  /* padding: 1rem 5rem 1rem 5rem; */
+  padding: 1rem 5rem 1rem 5rem;
   background-color: black;
   color: #d9d9d9;
   border: 2px solid #00ffff;
@@ -175,7 +187,7 @@ nav ul li a:hover {
   color: #006da0;
   font-weight: bold;
   padding: 2rem;
-  font-size: 2.3rem;
+  /* font-size: 2.3rem; */
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -468,7 +480,14 @@ address {
 label {
   font-size: 1.6rem;
   font-weight: bold;
+  display: block;
 }
+
+/* .inscription-section button,
+.announcement-section button {
+  line-height: none;
+  height: 4.2rem;
+} */
 
 .style {
   display: flex;
@@ -587,7 +606,9 @@ textarea {
 
 .wrapper-list a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: black;
+  border-bottom: 2px solid #006da0;
+  margin: 1rem;
 }
 
 /* MENTIONS LEGALES*/
@@ -601,7 +622,22 @@ textarea {
   text-align: center;
 }
 
+.style-button {
+  --bs-body-line-height: 0;
+  padding: 0 2rem 0 2rem;
+  font-size: 1.4rem;
+  line-height: 0;
+  font-family: sans-serif;
+}
+
 @media only screen and (max-width: 75em) {
+  .style-button {
+    --bs-body-line-height: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+    font-family: sans-serif;
+  }
 }
 
 @media only screen and (max-width: 62em) {
@@ -612,6 +648,22 @@ textarea {
   form {
     display: block;
   }
+
+  .nav-link {
+    line-height: 4rem;
+  }
+
+  .collapse {
+    height: auto;
+  }
+
+  /* .style-button {
+    --bs-body-line-height: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+    font-family: sans-serif;
+  } */
 }
 
 @media only screen and (max-width: 48em) {
@@ -659,6 +711,22 @@ textarea {
     max-width: 50rem;
     width: 100%;
   }
+
+  .nav-link {
+    line-height: 4rem;
+  }
+
+  .collapse {
+    height: auto;
+  }
+
+  /* .style-button {
+    --bs-body-line-height: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+    font-family: sans-serif;
+  } */
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -678,10 +746,14 @@ textarea {
     width: auto;
   }
 
-  .style-button {
+  .nav-link {
+    line-height: 4rem;
+  }
+
+  /* .style-button {
     font-size: 1.4rem;
     padding: 1rem 2.5rem 1rem 2.5rem;
-  }
+  } */
 
   .inscription-section,
   .announcement-section {
@@ -694,6 +766,22 @@ textarea {
   textarea {
     /* width: 20rem; */
   }
+
+  .nav-link {
+    line-height: 4rem;
+  }
+
+  .collapse {
+    height: auto;
+  }
+
+  /* .style-button {
+    --bs-body-line-height: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+    font-family: sans-serif;
+  } */
 }
 
 @media only screen and (max-width: 36em) {
@@ -701,6 +789,14 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
   }
+
+  /* .style-button {
+    --bs-body-line-height: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+    font-family: sans-serif;
+  } */
 
   nav ul li {
     padding: 0.2rem 0;
@@ -726,6 +822,14 @@ textarea {
 
   .text-presentation p {
     width: 100%;
+  }
+
+  .nav-link {
+    line-height: 4rem;
+  }
+
+  .collapse {
+    height: auto;
   }
 }
 
@@ -769,6 +873,7 @@ textarea {
 
   label {
     font-size: 1.4rem;
+    display: block;
   }
 
   .img-box-gallery {
@@ -800,6 +905,26 @@ textarea {
 
   .card-job {
     margin: 2rem 0;
+  }
+
+  /* .style-button {
+    --bs-body-line-height: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+    font-family: sans-serif;
+  } */
+
+  .nav-link {
+    line-height: 4rem;
+  }
+
+  .collapse {
+    height: auto;
+  }
+
+  .style-h {
+    font-size: 1.4rem;
   }
 
   /* .job-section-list {
